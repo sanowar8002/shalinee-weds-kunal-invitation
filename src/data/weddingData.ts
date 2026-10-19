@@ -18,7 +18,7 @@ export const WEDDING_DATA = {
   bride: {
     name: "Dr. Shalinee",
     hindiName: "शालिनी",
-    parents: "D/O MR. VIDYASAGAR MAHASETH & MRS. ANJU KUMARI",
+    parents: "D/O MR. BIDYASAGAR MAHASETH & MRS. ANJU KUMARI",
     grandparents: "",
   } as PersonInfo,
   groom: {
