@@ -192,7 +192,7 @@ export const FinaleSlide: React.FC<FinaleSlideProps> = ({
           className="font-['Jacques_Francois',_Georgia,_serif] uppercase tracking-[0.08em] text-[8px] sm:text-[9.5px] text-[#4a1820] font-medium leading-[1.3] max-w-[240px] sm:max-w-[270px] mx-auto mt-0.5"
         >
           <p>D/O MR. VIDYASAGAR MAHASETH</p>
-          <p className="text-[7.5px] sm:text-[9px] text-[#4a1820]/85">&amp; MRS. ANJU DEVI</p>
+          <p className="text-[7.5px] sm:text-[9px] text-[#4a1820]/85">&amp; MRS. ANJU KUMARI</p>
         </motion.div>
 
         {/* weds Flanked by Florets */}
@@ -221,7 +221,7 @@ export const FinaleSlide: React.FC<FinaleSlideProps> = ({
           variants={fadeVariant}
           className="font-['Jacques_Francois',_Georgia,_serif] uppercase tracking-[0.08em] text-[8px] sm:text-[9.5px] text-[#4a1820] font-medium leading-[1.3] max-w-[240px] sm:max-w-[270px] mx-auto mt-0.5"
         >
-          <p>S/O MR. SUBODH PRASAD</p>
+          <p>S/O MR. SUBODH KUMAR SAH</p>
           <p className="text-[7.5px] sm:text-[9px] text-[#4a1820]/85">&amp; MRS. BABY DEVI</p>
         </motion.div>
 
