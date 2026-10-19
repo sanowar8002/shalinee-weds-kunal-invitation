@@ -133,39 +133,61 @@ export const SaveTheDateSlide: React.FC<SaveTheDateSlideProps> = ({
         </div>
       </motion.div>
 
-      {/* Next Slide Arrow Button */}
+      {/* Next Slide Arrow Button with 'Scroll' text */}
       <motion.button
         type="button"
-        aria-label="Next slide"
-        className="sm-std-next"
+        aria-label="Scroll to next slide"
+        className="sm-std-next cursor-pointer"
         initial={false}
-        animate={{ opacity: showNextBtn && active ? 0.85 : 0 }}
+        animate={{ opacity: showNextBtn && active ? 1 : 0 }}
         transition={{ duration: 0.5 }}
-        style={{ pointerEvents: showNextBtn && active ? "auto" : "none" }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "2px",
+          pointerEvents: showNextBtn && active ? "auto" : "none",
+          color: "#4d0d16",
+          filter: "drop-shadow(0 1px 3px rgba(255, 255, 255, 0.95))",
+          bottom: "max(0.75rem, env(safe-area-inset-bottom))",
+        }}
         onClick={onNext}
       >
         <svg
           viewBox="0 0 24 24"
-          width="26"
-          height="26"
+          width="24"
+          height="24"
           fill="none"
           aria-hidden={true}
         >
           <path
-            d="M5 7l7 7 7-7"
+            d="M6 8l6 6 6-6"
             stroke="currentColor"
-            strokeWidth="2"
+            strokeWidth="2.6"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
-            d="M5 13l7 7 7-7"
+            d="M6 14l6 6 6-6"
             stroke="currentColor"
-            strokeWidth="2"
+            strokeWidth="2.6"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
         </svg>
+        <span
+          className="font-bold tracking-[0.2em] uppercase"
+          style={{
+            fontFamily: "'Jacques Francois', Georgia, serif",
+            fontSize: "11px",
+            color: "#4d0d16",
+            letterSpacing: "0.22em",
+            textShadow:
+              "0 1px 3px rgba(255, 255, 255, 0.95), 0 0 8px rgba(255, 255, 255, 0.9), 0 0 12px rgba(255, 248, 235, 0.8)",
+          }}
+        >
+          Scroll
+        </span>
       </motion.button>
 
       {/* Confetti container fallback canvas */}

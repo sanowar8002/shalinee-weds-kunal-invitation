@@ -117,11 +117,11 @@ export const CarnivalSlide: React.FC<CarnivalSlideProps> = ({
 
           {/* Couple Names */}
           <h2 className="sm-cv-names">
-            <span className="sm-cv-name">Kunal</span>
+            <span className="sm-cv-name">Shalinee</span>
             <span className="sm-cv-x" aria-hidden={true}>
               &amp;
             </span>
-            <span className="sm-cv-name">Shalinee</span>
+            <span className="sm-cv-name">Kunal</span>
           </h2>
 
           {/* Golden Royal Crest SVG */}

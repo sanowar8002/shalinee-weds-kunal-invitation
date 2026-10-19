@@ -178,36 +178,6 @@ export const FinaleSlide: React.FC<FinaleSlideProps> = ({
           <span className="w-8 sm:w-10 h-[1px] bg-gradient-to-l from-transparent to-[#b5892b]" />
         </motion.div>
 
-        {/* Groom Name in Elegant Great Vibes Calligraphy */}
-        <motion.h2
-          variants={fadeVariant}
-          className="font-['Great_Vibes',_cursive] text-[#7a1322] text-[1.85rem] sm:text-[2.2rem] md:text-[2.5rem] font-normal leading-none my-0.5 drop-shadow-[0_1px_2px_rgba(255,255,255,0.85)] tracking-normal"
-        >
-          {WEDDING_DATA.groom.name}
-        </motion.h2>
-
-        {/* Groom Parents — 2 clean centered lines preventing pillar overlap */}
-        <motion.div
-          variants={fadeVariant}
-          className="font-['Jacques_Francois',_Georgia,_serif] uppercase tracking-[0.08em] text-[8px] sm:text-[9.5px] text-[#4a1820] font-medium leading-[1.3] max-w-[240px] sm:max-w-[270px] mx-auto mt-0.5"
-        >
-          <p>S/O MR. SUBODH PRASAD</p>
-          <p className="text-[7.5px] sm:text-[9px] text-[#4a1820]/85">&amp; MRS. BABY DEVI</p>
-        </motion.div>
-
-        {/* weds Flanked by Florets */}
-        <motion.div
-          variants={fadeVariant}
-          className="flex items-center justify-center gap-2 my-0.5"
-          aria-hidden={true}
-        >
-          <span className="text-[#c9a227] text-[9px]">❖</span>
-          <span className="font-['Great_Vibes',_cursive] text-lg sm:text-xl text-[#7a1322] font-semibold italic px-1 leading-none">
-            weds
-          </span>
-          <span className="text-[#c9a227] text-[9px]">❖</span>
-        </motion.div>
-
         {/* Bride Name in Elegant Great Vibes Calligraphy */}
         <motion.h2
           variants={fadeVariant}
@@ -225,12 +195,42 @@ export const FinaleSlide: React.FC<FinaleSlideProps> = ({
           <p className="text-[7.5px] sm:text-[9px] text-[#4a1820]/85">&amp; MRS. ANJU DEVI</p>
         </motion.div>
 
+        {/* weds Flanked by Florets */}
+        <motion.div
+          variants={fadeVariant}
+          className="flex items-center justify-center gap-2 my-0.5"
+          aria-hidden={true}
+        >
+          <span className="text-[#c9a227] text-[9px]">❖</span>
+          <span className="font-['Great_Vibes',_cursive] text-lg sm:text-xl text-[#7a1322] font-semibold italic px-1 leading-none">
+            weds
+          </span>
+          <span className="text-[#c9a227] text-[9px]">❖</span>
+        </motion.div>
+
+        {/* Groom Name in Elegant Great Vibes Calligraphy */}
+        <motion.h2
+          variants={fadeVariant}
+          className="font-['Great_Vibes',_cursive] text-[#7a1322] text-[1.85rem] sm:text-[2.2rem] md:text-[2.5rem] font-normal leading-none my-0.5 drop-shadow-[0_1px_2px_rgba(255,255,255,0.85)] tracking-normal"
+        >
+          {WEDDING_DATA.groom.name}
+        </motion.h2>
+
+        {/* Groom Parents — 2 clean centered lines preventing pillar overlap */}
+        <motion.div
+          variants={fadeVariant}
+          className="font-['Jacques_Francois',_Georgia,_serif] uppercase tracking-[0.08em] text-[8px] sm:text-[9.5px] text-[#4a1820] font-medium leading-[1.3] max-w-[240px] sm:max-w-[270px] mx-auto mt-0.5"
+        >
+          <p>S/O MR. SUBODH PRASAD</p>
+          <p className="text-[7.5px] sm:text-[9px] text-[#4a1820]/85">&amp; MRS. BABY DEVI</p>
+        </motion.div>
+
         {/* VENUES & MAP Pill Button — fits well above the mandap & couple */}
         <motion.button
           variants={fadeVariant}
           type="button"
           onClick={() => setShowModal(true)}
-          className="mt-2 sm:mt-2.5 inline-flex items-center gap-1.5 px-4 py-1.5 sm:px-5 sm:py-2 rounded-full bg-gradient-to-r from-[#fffcf2] via-[#faf0d7] to-[#f4e4bf] border border-[#cfab4d] shadow-[0_3px_10px_rgba(180,135,40,0.22)] hover:scale-105 active:scale-95 transition-all text-[#4a131c] cursor-pointer"
+          className="mt-2.5 sm:mt-3 inline-flex items-center gap-1.5 px-4 py-1.5 sm:px-5 sm:py-2 rounded-full bg-gradient-to-r from-[#fffcf2] via-[#faf0d7] to-[#f4e4bf] border border-[#cfab4d] shadow-[0_3px_10px_rgba(180,135,40,0.22)] hover:scale-105 active:scale-95 transition-all text-[#4a131c] cursor-pointer"
           aria-label="View Venues and Map"
         >
           <svg
@@ -248,30 +248,6 @@ export const FinaleSlide: React.FC<FinaleSlideProps> = ({
             VENUES &amp; MAP
           </span>
         </motion.button>
-
-        {/* Contact Phone Pill directly below VENUES & MAP */}
-        <motion.a
-          variants={fadeVariant}
-          href="tel:9472131587"
-          className="mt-1.5 sm:mt-2 inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-gradient-to-r from-[#fffbf2]/95 via-[#fcf6e8]/95 to-[#f6ecda]/95 border border-[#cfab4d]/80 shadow-[0_2px_8px_rgba(180,135,40,0.18)] hover:scale-105 active:scale-95 transition-all text-[#4a131c] group cursor-pointer"
-          aria-label="Call 9472131587"
-        >
-          {/* Contact Logo / Icon */}
-          <span className="w-4 h-4 rounded-full bg-gradient-to-br from-[#c9a227] via-[#a8821a] to-[#7a5c10] flex items-center justify-center text-white shadow-xs">
-            <svg
-              viewBox="0 0 24 24"
-              width="9.5"
-              height="9.5"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.44-5.15-3.75-6.59-6.59l1.97-1.57c.28-.27.36-.66.25-1.02A11.36 11.36 0 0 1 8.57 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.58c0-.55-.45-1-.99-1.04z" />
-            </svg>
-          </span>
-          <span className="font-['Jacques_Francois',_Georgia,_serif] font-bold text-[9.5px] sm:text-[11px] tracking-[0.14em] text-[#4a131c] group-hover:text-[#7a1322]">
-            9472131587
-          </span>
-        </motion.a>
       </motion.div>
 
       {/* Bottom Center Circular Down Arrow Button */}

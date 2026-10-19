@@ -24,7 +24,7 @@ export const WeddingSlide: React.FC<WeddingSlideProps> = ({
       {/* Royal Palace Venue Watercolor Background */}
       <motion.img
         src={WEDDING_DATA.media.wedding.bg}
-        alt="Sukrit Royal Palace"
+        alt="Kala Bhawan Purnia"
         className="sm-wed-venue"
         aria-hidden={true}
         initial={false}

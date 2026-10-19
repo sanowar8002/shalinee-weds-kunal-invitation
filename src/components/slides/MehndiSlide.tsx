@@ -105,13 +105,13 @@ export const MehndiSlide: React.FC<MehndiSlideProps> = ({
             }}
           >
             <span className="sm-cv-name" style={{ color: "#fff8db", fontFamily: "'Great Vibes', 'Allura', 'Parisienne', cursive" }}>
-              Kunal
+              Shalinee
             </span>
             <span className="sm-cv-x" style={{ color: "#fde047" }} aria-hidden={true}>
               &amp;
             </span>
             <span className="sm-cv-name" style={{ color: "#fff8db", fontFamily: "'Great Vibes', 'Allura', 'Parisienne', cursive" }}>
-              Shalinee
+              Kunal
             </span>
           </h2>
 
