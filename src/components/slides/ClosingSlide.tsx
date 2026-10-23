@@ -138,33 +138,20 @@ export const ClosingSlide: React.FC<ClosingSlideProps> = ({
       {/* Spacer */}
       <div className="flex-1 pointer-events-none" />
 
-      {/* Dark Bottom Bar: Made with ❤️ for Kunal & Shalinee with Replay */}
-      <div className="relative z-20 w-full bg-[#1e0509]/95 backdrop-blur-xs py-2 px-4 flex items-center justify-between border-t border-[#c9a227]/30">
-        <a
-          href={`https://wa.me/919217104917?text=${encodeURIComponent(
-            "Hi, I loved Kunal & Shalinee's wedding invitation and would like to know more!"
-          )}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-1.5 text-[9.5px] sm:text-[11px] tracking-[0.16em] uppercase text-[#fdf7e8] hover:text-[#e7c86b] transition-colors"
-        >
-          <span className="text-[#c9a227] text-[10px]">❖</span>
-          <span>Made with ❤️ for Kunal &amp; Shalinee</span>
-          <span className="text-[#c9a227] text-[10px]">❖</span>
-        </a>
-
-        {onRestart && (
+      {/* Bottom Bar with Replay */}
+      {onRestart && (
+        <div className="relative z-20 w-full bg-[#1e0509]/95 backdrop-blur-xs py-2.5 px-4 flex items-center justify-center border-t border-[#c9a227]/30">
           <button
             type="button"
             onClick={onRestart}
             aria-label="Replay Wedding Invitation"
-            className="flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#c9a227]/25 border border-[#c9a227]/60 text-[#fdf7e8] text-[9.5px] sm:text-[10.5px] tracking-wider uppercase font-medium hover:bg-[#c9a227]/40 active:scale-95 transition-all cursor-pointer"
+            className="flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#c9a227]/25 border border-[#c9a227]/60 text-[#fdf7e8] text-[10px] sm:text-[11px] tracking-widest uppercase font-medium hover:bg-[#c9a227]/40 active:scale-95 transition-all cursor-pointer"
           >
             <span>↺</span>
             <span>Replay</span>
           </button>
-        )}
-      </div>
+        </div>
+      )}
     </section>
   );
 };
